@@ -4,14 +4,14 @@ import {Separator} from "@/components/ui/separator";
 
 const teams = [
     {
-        image: "1DivM.jpeg",
+        image: "/1DivM.jpeg",
         name: "1° DIVISIONE MASCHILE",
         days: "2 Allenamenti settimanali",
         math: "Gare infrasettimanali",
         calendar: "https://www.sol.milano.federvolley.it/calendarioris/1001044/2025"
     },
     {
-        image: "2DivM.jpeg",
+        image: "/2DivM.jpeg",
         name: "2° DIVISIONE MASCHILE",
         days: "2 Allenamenti settimanali",
         math: "Gare nel weekend",
@@ -32,14 +32,14 @@ const teams = [
         calendar: "https://volley.pgsmilano.org/calendari"
     },
     {
-        image: "U15F.jpeg",
+        image: "/U15F.jpeg",
         name: "UNDER 15 FEMMINILE",
         days: "2 Allenamenti settimanali",
         math: "Gare nel weekend",
         calendar: "https://ivl.usacli.it/CalendarioView?girone_id=null&territorio_id=3&campionato_id=null&inizio_stagione=2025-09-01T00:00:00.000Z&fine_stagione=2026-08-31T00:00:00.000Z&societa_id=156&squadra_id=1334"
     },
     {
-        image: "U12.jpeg",
+        image: "/U12.jpeg",
         name: "UNDER 12",
         days: "2 Allenamenti settimanali",
         math: "Gare nel weekend",
