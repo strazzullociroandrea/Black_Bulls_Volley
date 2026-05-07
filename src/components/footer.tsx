@@ -63,6 +63,9 @@ export const Footer = () => {
                 <p className="text-xs text-zinc-500">
                     © {new Date().getFullYear()} Black Bulls Volley ASD. Tutti i diritti riservati.
                 </p>
+                <p className="text-xs text-zinc-500">
+                    Developed by <a href="https://cirostrazzullo.it" target="_blank">cirostrazzullo.it</a>
+                </p>
             </div>
         </footer>
     );
