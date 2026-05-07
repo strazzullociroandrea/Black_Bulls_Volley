@@ -30,7 +30,7 @@ const organization = {
         {team: "U15 Femminile", coach: "Federica Urso"},
         {team: "U12", coach: "Annalisa Nigro", second: "Ludovico Grotti"},
     ],
-    dirigenti: ["Dell’olio Antonietta", "Giorgio Domenico", "Lionetti Brunella", "Pozzo Elena"],
+    dirigenti: ["Dell’olio Antonietta", "Giorgio Domenico", "Lionetti Brunella", "Pozzi Elena"],
 };
 
 export const OrganizationalChart = () => {
