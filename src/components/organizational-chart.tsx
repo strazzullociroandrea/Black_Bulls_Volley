@@ -1,6 +1,6 @@
 import React from "react";
 import {
-    Card,
+    Card, CardContent,
 } from "@/components/ui/card";
 import {Separator} from "@/components/ui/separator";
 import {Avatar, AvatarFallback} from "@/components/ui/avatar";
@@ -81,10 +81,14 @@ export const OrganizationalChart = () => {
                         </div>
                         <div className="grid gap-3 mb-5">
                             {organization.amministrazione.map((o) => (
-                                <div key={o.name} className="p-4 rounded-2xl bg-slate-50 border border-slate-100">
-                                    <p className="text-sm font-black text-slate-900 uppercase tracking-tighter">{o.name}</p>
-                                    <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">{o.role}</p>
-                                </div>
+                                <Card key={o.name} className=" rounded-2xl bg-slate-50 border border-slate-100">
+                                    <CardContent>
+                                        <p
+                                            className="ml-3 text-sm font-black text-slate-900 uppercase tracking-tighter">{o.name}</p>
+                                        <p className="ml-3 text-[10px] font-bold text-slate-400 uppercase tracking-widest">{o.role}</p>
+                                    </CardContent>
+
+                                </Card>
                             ))}
                         </div>
                         <Separator/>
@@ -94,15 +98,17 @@ export const OrganizationalChart = () => {
                         </div>
                         <div className="grid gap-3 mt-5">
                             {organization.dirigenti.map((name) => (
-                                <div key={name} className="p-4 rounded-2xl bg-slate-50 border border-slate-100">
-                                    <p className="text-sm font-black text-slate-900 uppercase tracking-tighter">{name}</p>
-                                </div>
+                                <Card key={name} className="p-4 rounded-2xl bg-slate-50 border border-slate-100">
+                                    <CardContent>
+                                        <p className="text-sm font-black text-slate-900 uppercase tracking-tighter">{name}</p>
+                                    </CardContent>
+                                </Card>
                             ))}
                         </div>
                     </div>
                     <div className="lg:w-2/3 flex flex-col gap-6">
                         <div className="flex items-center gap-2">
-                            <Trophy className="w-5 h-5 text-red-600 shrink-0" />
+                            <Trophy className="w-5 h-5 text-red-600 shrink-0"/>
                             <h3 className="font-black uppercase tracking-widest text-sm text-slate-900">
                                 Allenatori
                             </h3>
@@ -112,9 +118,9 @@ export const OrganizationalChart = () => {
                             {organization.allenatori.map((team) => (
                                 <Card
                                     key={team.team}
-                                    className="h-40 group relative flex flex-col justify-center p-8 rounded-3xl bg-white border border-slate-200 shadow-sm transition-all duration-300 hover:shadow-xl hover:border-red-100 hover:-translate-y-1"
-                                >
-                                    <div className={`space-y-1 ${team.second ? "": "mb-15"}  `}>
+                                    className="group relative p-6 rounded-3xl bg-white border border-slate-200 shadow-sm transition-all duration-300 hover:shadow-xl hover:border-red-100">
+
+                                    <div className={`space-y-1 ${team.second ? "" : "mb-15"}  `}>
                                         <p className="text-[10px] font-bold text-red-600 uppercase tracking-widest">
                                             {team.team}
                                         </p>

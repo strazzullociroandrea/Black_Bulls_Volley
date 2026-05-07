@@ -45,7 +45,7 @@ export const Navbar = () => {
             </div>
             <div className={`
                 lg:hidden absolute top-full left-0 w-full bg-black border-b border-white/10 transition-all duration-300 ease-in-out overflow-hidden
-                ${open ? "max-h-[400px] opacity-100" : "max-h-0 opacity-0 pointer-events-none"}
+                ${open ? "max-h-100 opacity-100" : "max-h-0 opacity-0 pointer-events-none"}
             `}>
                 <div className="container mx-auto flex flex-col items-center gap-8 py-10 px-6">
                     {navLinks.map((link) => (
