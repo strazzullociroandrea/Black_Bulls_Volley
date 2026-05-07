@@ -16,7 +16,7 @@ export const WhoWeAre = () => {
                             BLACK BULLS <br/>
                             <span className="text-red-600">  VOLLEY</span>
                         </h2>
-                        <div className="mt-10 space-y-8">
+                        <div className="mt-10 space-y-8   hidden sm:block">
                             <Card
                                 className="rounded-3xl   border-red-500/15 bg-linear-to-br from-red-50 to-white p-8 ">
                                 <p className="text-sm font-semibold uppercase tracking-[0.28em] mb-2 text-red-500">
@@ -78,6 +78,32 @@ export const WhoWeAre = () => {
                                 </p>
                             </div>
                         </Card>
+                        <div className="mt-10 space-y-8 block sm:hidden">
+                            <Card
+                                className="rounded-3xl   border-red-500/15 bg-linear-to-br from-red-50 to-white p-8 ">
+                                <p className="text-sm font-semibold uppercase tracking-[0.28em] mb-2 text-red-500">
+                                    Mission</p>
+                                <h3 className="mb-4 text-2xl font-semibold text-slate-900">Crescere attraverso lo sport</h3>
+                                <p className="leading-7 text-sm font-light text-slate-700 md:text-base">
+                                    La nostra mission è far crescere atleti e persone attraverso lo sport, creando un
+                                    ambiente serio,
+                                    inclusivo e competitivo dove impegno, rispetto e lavoro di squadra siano al centro del
+                                    nostro percorso
+                                    formativo.
+                                </p>
+                            </Card>
+                            <Card
+                                className="rounded-3xl border-slate-200 bg-slate-50 p-8 ">
+                                <p className="text-sm font-semibold uppercase tracking-[0.28em] mb-2 text-red-500">Vision</p>
+                                <h3 className="mb-4 text-2xl font-semibold text-slate-900">Un riferimento per il
+                                    territorio</h3>
+                                <p className=" leading-7 text-sm font-light text-slate-700 md:text-base">
+                                    La nostra visione è di diventare un’associazione di riferimento nella pallavolo
+                                    giovanile e agonistica
+                                    sul territorio in cui operiamo.
+                                </p>
+                            </Card>
+                        </div>
                     </div>
                 </div>
             </div>
