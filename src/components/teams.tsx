@@ -4,7 +4,7 @@ import {Separator} from "@/components/ui/separator";
 
 const teams = [
     {
-        image: "",
+        image: "1DivM.jpeg",
         name: "1° DIVISIONE MASCHILE",
         days: "2 Allenamenti settimanali",
         math: "Gare infrasettimanali",
