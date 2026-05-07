@@ -34,6 +34,13 @@ const teams = [
     },
     {
         image: "",
+        name: "UNDER 15 FEMMINILE",
+        days: "2 Allenamenti settimanali",
+        math: "Gare nel weekend",
+        calendar: "https://ivl.usacli.it/CalendarioView?girone_id=null&territorio_id=3&campionato_id=null&inizio_stagione=2025-09-01T00:00:00.000Z&fine_stagione=2026-08-31T00:00:00.000Z&societa_id=156&squadra_id=1334"
+    },
+    {
+        image: "",
         name: "UNDER 12",
         days: "2 Allenamenti settimanali",
         math: "Gare nel weekend",
