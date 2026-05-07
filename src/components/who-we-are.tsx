@@ -51,7 +51,7 @@ export const WhoWeAre = () => {
                                 <p>
                                     Black Bulls Volley è <span className="font-bold">un’associazione sportiva di pallavolo a Cologno Monzese</span>,
                                     attiva nel
-                                    <span className="font-bold">settore
+                                    <span className="font-bold"> settore
                                 giovanile</span> e nella partecipazione a <span className="font-bold">campionati di pallavolo</span> a
                                     livello regionale,
                                     provinciale e

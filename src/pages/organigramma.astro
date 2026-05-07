@@ -2,13 +2,17 @@
 import Layout from '../layouts/Layout.astro';
 import {Navbar} from '../components/navbar'
 import {OrganizationalChart} from '../components/organizational-chart'
+import {Footer} from "@/components/footer.tsx";
 ---
 
 <Layout>
     <header>
-        <Navbar/>
+        <Navbar client:load/>
     </header>
     <main class="pt-20 md:pt-10">
         <OrganizationalChart/>
     </main>
+    <footer>
+        <Footer/>
+    </footer>
 </Layout>
