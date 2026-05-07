@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import {Navbar} from '../components/navbar'
 import {Contact} from '../components/contact'
+import {Footer} from "@/components/footer.tsx";
 ---
 
 <Layout>
@@ -11,4 +12,7 @@ import {Contact} from '../components/contact'
     <main class="pt-20 md:pt-10">
         <Contact/>
     </main>
+    <footer>
+        <Footer/>
+    </footer>
 </Layout>
