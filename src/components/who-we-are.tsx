@@ -85,7 +85,7 @@ export const WhoWeAre = () => {
                                     Mission</p>
                                 <h3 className="mb-4 text-2xl font-semibold text-slate-900">Crescere attraverso lo sport</h3>
                                 <p className="leading-7 text-sm font-light text-slate-700 md:text-base">
-                                    La nostra mission è far crescere atleti e persone attraverso lo sport, creando un
+                                    La nostra missione è far crescere atleti e persone attraverso lo sport, creando un
                                     ambiente serio,
                                     inclusivo e competitivo dove impegno, rispetto e lavoro di squadra siano al centro del
                                     nostro percorso
