@@ -81,7 +81,7 @@ export const Contact = () => {
                                 <Card
                                     key={item.label}
 
-                                    className="cursor-pointer group relative flex flex-col justify-between p-8 rounded-3xl bg-white border border-slate-200 shadow-sm transition-all duration-300 hover:shadow-xl hover:border-red-100 hover:-translate-y-1"
+                                    className="cursor-pointer group relative flex flex-col justify-between p-8 rounded-3xl bg-white border border-slate-200 shadow-sm transition-all duration-300 hover:shadow-xl hover:border-red-100"
                                 >
                                     <CardContent>
                                         <div
