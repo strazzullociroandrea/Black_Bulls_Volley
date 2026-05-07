@@ -1,7 +1,6 @@
 import {Card, CardContent, CardTitle} from "@/components/ui/card";
-import {ArrowUpRight, Trophy, Dumbbell, Calendar} from "lucide-react"
+import {ArrowUpRight, Dumbbell, Calendar} from "lucide-react";
 import {Separator} from "@/components/ui/separator";
-
 
 const teams = [
     {
@@ -12,35 +11,35 @@ const teams = [
         calendar: "https://www.sol.milano.federvolley.it/calendarioris/1001044/2025"
     },
     {
-        image: "",
+        image: "2DivM.jpeg",
         name: "2° DIVISIONE MASCHILE",
         days: "2 Allenamenti settimanali",
         math: "Gare nel weekend",
         calendar: "https://www.sol.milano.federvolley.it/calendarioris/1001048/2025"
     },
     {
-        image: "",
+        image: "/3DivF.jpeg",
         name: "3° DIVISIONE FEMMINILE",
         days: "2 Allenamenti settimanali",
         math: "Gare infrasettimanali",
         calendar: "https://www.sol.milano.federvolley.it/calendarioris/1001053/2025"
     },
     {
-        image: "",
+        image: "/U15M.jpeg",
         name: "UNDER 15 MASCHILE",
         days: "2 Allenamenti settimanali",
         math: "Gare nel weekend",
         calendar: "https://volley.pgsmilano.org/calendari"
     },
     {
-        image: "",
+        image: "U15F.jpeg",
         name: "UNDER 15 FEMMINILE",
         days: "2 Allenamenti settimanali",
         math: "Gare nel weekend",
         calendar: "https://ivl.usacli.it/CalendarioView?girone_id=null&territorio_id=3&campionato_id=null&inizio_stagione=2025-09-01T00:00:00.000Z&fine_stagione=2026-08-31T00:00:00.000Z&societa_id=156&squadra_id=1334"
     },
     {
-        image: "",
+        image: "U12.jpeg",
         name: "UNDER 12",
         days: "2 Allenamenti settimanali",
         math: "Gare nel weekend",
@@ -50,11 +49,9 @@ const teams = [
 
 export const Teams = () => {
     return (
-        <section id="squadre" className="relative bg-white py-8 md:py-32 overflow-hidden">
-
+        <section id="squadre" className="relative bg-white py-24 md:py-32 overflow-hidden">
             <div className="container relative z-10 mx-auto max-w-6xl px-6">
-                <div className="flex flex-col lg:flex-row gap-16">
-
+                <div className="flex flex-col lg:flex-row gap-16 mb-12">
                     <div className="lg:w-1/3">
                         <span className="text-red-600 font-bold tracking-[0.2em] uppercase text-xs">
                           Stagione corrente
@@ -63,62 +60,68 @@ export const Teams = () => {
                             LE NOSTRE<br/>
                             <span className="text-red-600">SQUADRE</span>
                         </h2>
-                        <p className="mt-6 text-slate-500 leading-relaxed">
-                            Scopri tutte le squadre Black Bulls Volley.
+                        <p className="mt-6 text-slate-500 leading-relaxed font-light">
+                            Scopri tutte le formazioni che portano in campo i colori dei Black Bulls.
                         </p>
-
                     </div>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-10">
-                    {
-                        teams.map((team, i) => (
-                            <Card key={i}
-                                  className="h-110 group rounded-4xl p-4 cursor-pointer bg-white border border-slate-200 shadow-sm transition-all duration-300 hover:shadow-xl hover:border-red-100">
-                                <div className="relative w-full h-52 flex items-center">
-                                    {team.image !== "" ? (
-                                        <img
-                                            src={team.image}
-                                            alt={team.name}
-                                            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                                        />
-                                    ) : (
-                                        <div className="p-8 w-full h-full">
-                                            <div className="p-4 w-fit rounded-2xl bg-white text-red-800 shadow-sm transition-colors group-hover:text-red-600 group-hover:bg-red-50">
-                                                <Trophy className="w-8 h-8" />
-                                            </div>
-                                        </div>
-                                    )}
-                                </div>
-                                <CardTitle>
-                                    <h3 className="ml-4 mt-15 text-xl font-bold text-slate-900 mb-2">{team.name}</h3>
-                                </CardTitle>
-                                <CardContent>
-                                    <div className="space-y-3 mb-7">
-                                        <div className="flex items-center gap-3 text-sm text-slate-600">
-                                            <Dumbbell size={16} className="text-red-500 shrink-0"/>
-                                            <span>{team.days}</span>
-                                        </div>
-                                        <div className="  flex items-center gap-3 text-sm text-slate-600">
-                                            <Calendar size={16} className="text-red-500 shrink-0"/>
-                                            <span>{team.days}</span>
-                                        </div>
-                                    </div>
-                                    <Separator/>
-                                    <a href={team.calendar} target="_blank" rel="noopener noreferrer"
-                                       className="w-full h-auto mb-2 justify-center  inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-slate-400 group-hover:text-red-600 transition-colors pt-6 border-t border-slate-50">
-                                        Calendario gare <ArrowUpRight size={16}
-                                                                      className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"/>
-                                    </a>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {teams.map((team, i) => (
+                        <Card key={i}
+                              className="cursor-pointer group flex flex-col h-full overflow-hidden rounded-[2.5rem] bg-white border border-slate-200 shadow-sm transition-all duration-500 hover:shadow-2xl hover:shadow-red-500/10 hover:-translate-y-2 hover:border-red-500/20 p-0">
 
-                                </CardContent>
-                            </Card>
-                        ))
-                    }
+                            <div
+                                className="relative w-full h-64 bg-slate-100 overflow-hidden shrink-0 border-b border-slate-100">
+                                {team.image !== "" ? (
+                                    <img
+                                        src={team.image}
+                                        alt={team.name}
+                                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                    />
+                                ) : (
+                                    <div
+                                        className="w-full h-full bg-gradient-to-br from-slate-900 to-slate-800 flex items-center justify-center">
+                                        <span
+                                            className="text-slate-700 font-black text-4xl opacity-20 tracking-tighter uppercase select-none">
+                                            Black Bulls
+                                        </span>
+                                    </div>
+                                )}
+                                <div
+                                    className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"/>
+                            </div>
+
+                            <CardContent className="flex flex-col flex-1 p-8">
+                                <CardTitle className="mb-6 p-0">
+                                    <h3 className="text-xl font-black text-slate-900 uppercase tracking-tighter leading-tight group-hover:text-red-600 transition-colors">
+                                        {team.name}
+                                    </h3>
+                                </CardTitle>
+
+                                <div className="space-y-4 mb-8 flex-1">
+                                    <div className="flex items-center gap-3 text-sm text-slate-600">
+                                        <Dumbbell size={18} className="text-red-500 shrink-0"/>
+                                        <span className="font-medium">{team.days}</span>
+                                    </div>
+                                    <div className="flex items-center gap-3 text-sm text-slate-600">
+                                        <Calendar size={18} className="text-red-500 shrink-0"/>
+                                        <span className="font-medium">{team.math}</span>
+                                    </div>
+                                </div>
+
+                                <Separator className="mb-6 bg-slate-100"/>
+                                <a href={team.calendar} target="_blank" rel="noopener noreferrer"
+                                   className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.15em] text-slate-400 group-hover:text-red-600 transition-all">
+                                    Calendario gare
+                                    <ArrowUpRight size={16}
+                                                  className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"/>
+                                </a>
+                            </CardContent>
+                        </Card>
+                    ))}
                 </div>
             </div>
-
-
         </section>
     )
 }
