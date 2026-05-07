@@ -19,7 +19,7 @@ export const Navbar = () => {
             <div className="max-w-7xl mx-auto px-6 md:px-10 flex justify-between items-center">
 
                 <a href="/" className="relative z-50 flex items-center gap-2">
-                    <img src="./logo.png" alt="logo"
+                    <img src="/logo.png" alt="logo"
                          className="h-10 w-auto md:h-14 transition-transform duration-300 hover:scale-105"/>
                 </a>
 

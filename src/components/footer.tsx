@@ -8,7 +8,7 @@ export const Footer = () => {
 
                 <div className="flex flex-col space-y-4">
                     <div className="flex items-center gap-3">
-                        <img src="./logo.png" alt="logo" className="h-12 w-auto brightness-110"/>
+                        <img src="/logo.png" alt="logo" className="h-12 w-auto brightness-110"/>
                         <span className="font-display font-extrabold text-xl tracking-tight text-white uppercase">
                             Black Bulls <span className="text-red-600">Volley</span>
                         </span>
