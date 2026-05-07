@@ -24,7 +24,15 @@ export const JoinUs = () => {
                     </div>
                     <div className="lg:w-1/2">
                         <Card className="h-full">
-
+                            <div className="flex flex-col items-center justify-center h-full gap-6 p-10">
+                                <MessageCircle className="w-12 h-12 text-red-600"/>
+                                <h3 className="text-2xl font-bold text-slate-900">Contattaci</h3>
+                                <Button variant="outline" size="lg" asChild>
+                                    <a href="https://wa.me/393517506557" target="_blank" rel="noopener noreferrer">
+                                        Scrivici su WhatsApp
+                                    </a>
+                                </Button>
+                            </div>
                         </Card>
                     </div>
                 </div>
