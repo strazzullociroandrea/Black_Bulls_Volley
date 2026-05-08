@@ -78,8 +78,9 @@ export const Termini = () => {
                         <h2 className="text-lg font-semibold mb-2">7. Contatti
                         </h2>
                         <p>
-                            Per qualsiasi informazione puoi contattarci all'email  <a className="text-accent hover:underline"
-                                                                                      href="mailto:cblackbullsvolley@gmail.com">cblackbullsvolley@gmail.com</a>.
+                            Per qualsiasi informazione puoi contattarci all'email <a
+                            className="text-accent hover:underline"
+                            href="mailto:cblackbullsvolley@gmail.com">cblackbullsvolley@gmail.com</a>.
                         </p>
                     </div>
 
