@@ -1,0 +1,20 @@
+---
+import Layout from '../layouts/Layout.astro';
+import {Navbar} from '@/components/navbar'
+import {Footer} from '@/components/footer.tsx';
+import {CookiePolicy as CookiePolicySection} from '@/components/cookie-policy.tsx';
+---
+
+<Layout>
+    <header>
+        <Navbar client:load/>
+    </header>
+    <main class="pt-20 md:pt-10">
+        <CookiePolicySection/>
+    </main>
+    <footer>
+        <Footer/>
+    </footer>
+</Layout>
+
+

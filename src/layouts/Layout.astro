@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css'
+import {CookieConsent} from '@/components/cookie-consent.tsx';
 ---
 
 <!DOCTYPE html>
@@ -24,6 +25,7 @@ import '../styles/global.css'
 </head>
 <body>
 <slot/>
+    <CookieConsent client:load/>
 </body>
 </html>
 
