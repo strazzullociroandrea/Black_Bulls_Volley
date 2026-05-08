@@ -1,5 +1,6 @@
 import {MessageCircle, Mail} from 'lucide-react'
 
+
 export const Footer = () => {
     return (
         <footer className="mt-10 bg-zinc-950 text-zinc-300 py-12 border-t border-zinc-800">
@@ -21,18 +22,21 @@ export const Footer = () => {
                 <div className="flex flex-col space-y-4 mt-3">
                     <h4 className="text-white font-bold uppercase tracking-wider text-sm">Link rapidi</h4>
                     <ul className="text-zinc-400 text-sm space-y-2">
-                        <li><a href="./">Home</a></li>
-                        <li><a href="./squadre">Squadre</a></li>
-                        <li><a href="./organigramma">Organigramma</a></li>
-                        <li><a href="./contatti">Contatti</a></li>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/squadre">Squadre</a></li>
+                        <li><a href="/organigramma">Organigramma</a></li>
+                        <li><a href="/contatti">Contatti</a></li>
                     </ul>
                 </div>
                 <div className="flex flex-col space-y-4 mt-3">
                     <h4 className="text-white font-bold uppercase tracking-wider text-sm">Legale</h4>
                     <ul className="text-zinc-400 text-sm space-y-2">
-                        <li><a href="./">Cookie Policy</a></li>
-                        <li><a href="./privacy-policy">Privacy Policy</a></li>
-                        <li><a href="./termini">Termini e condizioni</a></li>
+                        <li><a href="/cookie-policy" className="hover:text-red-500 transition-colors">Cookie Policy</a>
+                        </li>
+                        <li><a href="/privacy-policy" className="hover:text-red-500 transition-colors">Privacy
+                            Policy</a></li>
+                        <li><a href="/termini" className="hover:text-red-500 transition-colors">Termini e condizioni</a>
+                        </li>
                     </ul>
                 </div>
 
