@@ -24,15 +24,27 @@ export const PrivacyPolicy = () => {
                             Il titolare del trattamento dei dati personali è <span className="font-bold">ASD Black Bulls Volley</span>,
                             con sede operativa a Cologno Monzese (MI).
                         </p>
-                        <p className="mt-3">
-                            <span className="font-semibold">Contatti:</span>
-                            <br/>
-                            Email: <a className="text-accent hover:underline" href="mailto:cblackbullsvolley@gmail.com">cblackbullsvolley@gmail.com</a>
-                            <br/>
-                            Telefono/WhatsApp: <a className="text-accent hover:underline" href="tel:+393517506557">+39 351 750 6557</a>
-                            <br/>
-                            Codice fiscale: 91572900156
-                        </p>
+                        <div className="mt-3 space-y-3">
+                            <p>
+                                <span className="font-semibold">Contatti del titolare:</span>
+                                <br/>
+                                Email: <a className="text-accent hover:underline" href="mailto:cblackbullsvolley@gmail.com">cblackbullsvolley@gmail.com</a>
+                                <br/>
+                                Telefono/WhatsApp: <a className="text-accent hover:underline" href="tel:+393517506557">+39 351 750 6557</a>
+                                <br/>
+                                Codice fiscale: 91572900156
+                            </p>
+                            <p>
+                                <span className="font-semibold">Rappresentante del titolare:</span> il legale rappresentante pro tempore di ASD Black Bulls Volley.
+                                <br/>
+                                Contatti del rappresentante: <a className="text-accent hover:underline" href="mailto:cblackbullsvolley@gmail.com">cblackbullsvolley@gmail.com</a>
+                            </p>
+                            <p>
+                                <span className="font-semibold">DPO:</span> non designato al momento.
+                                <br/>
+                                Contatti DPO: non applicabile.
+                            </p>
+                        </div>
                         <p className="mt-3">
                             Per esercitare i diritti privacy o ricevere chiarimenti, puoi scrivere all&apos;indirizzo email sopra indicato.
                         </p>
@@ -104,7 +116,7 @@ export const PrivacyPolicy = () => {
 
                     <div>
                         <h2 className="mb-2 text-lg font-semibold">7. Destinatari e responsabili esterni</h2>
-                        <p>I dati possono essere trattati da soggetti terzi che operano come autonomi titolari o responsabili del trattamento, tra cui:</p>
+                        <p>I dati possono essere trattati da soggetti terzi che operano come autonomi titolari o responsabili del trattamento, oppure che raccolgono dati tramite widget, link e integrazioni presenti sul sito, tra cui:</p>
                         <ul className="ml-10 list-disc space-y-2">
                             <li><span className="font-bold">Cloudflare Pages:</span> hosting e sicurezza infrastrutturale del sito.</li>
                             <li><span className="font-bold">Google Search Console:</span> analisi tecnica e monitoraggio indicizzazione/performance.</li>
