@@ -14,9 +14,7 @@ export const Footer = () => {
                         </span>
                     </div>
                     <p className="text-zinc-400 text-sm leading-relaxed max-w-xs">
-                        ASD di pallavolo a Cologno Monzese.
-                        Coltiviamo il talento, promuoviamo l'unione e portiamo avanti la passione per lo sport.
-                    </p>
+                        ASD Black Bulls Volley a Cologno Monzese (MI). Passione, grinta e crescita per atleti di ogni età. Scopri le nostre squadre, i calendari gare e unisciti alla nostra realtà pallavolistica.                    </p>
                 </div>
                 <div className="flex flex-col space-y-4 mt-3">
                     <h4 className="text-white font-bold uppercase tracking-wider text-sm">Link rapidi</h4>
@@ -54,7 +52,7 @@ export const Footer = () => {
                         <span>cblackbullsvolley@gmail.com </span>
                     </a>
                     <p className="text-sm mb-2  flex items-center gap-2  text-background/60">
-                        P. Iva 00749020962
+                        Codice Fiscale: 91572900156
                     </p>
                 </div>
 
