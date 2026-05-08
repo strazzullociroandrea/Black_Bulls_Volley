@@ -31,7 +31,7 @@ export const Footer = () => {
                     <h4 className="text-white font-bold uppercase tracking-wider text-sm">Legale</h4>
                     <ul className="text-zinc-400 text-sm space-y-2">
                         <li><a href="./">Cookie Policy</a></li>
-                        <li><a href="./organigramma">Privacy Policy</a></li>
+                        <li><a href="./privacy-policy">Privacy Policy</a></li>
                         <li><a href="./contatti">Termini e condizioni</a></li>
                     </ul>
                 </div>
