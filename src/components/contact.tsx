@@ -76,25 +76,29 @@ export const Contact = () => {
                     <div className="lg:w-2/3 grid sm:grid-cols-2 gap-4">
 
                         {mainContacts.map((item) => (
-                            <a href={item.href} target="_blank" rel="noopener noreferrer" className="h-full">
-
-                                <Card
-                                    key={item.label}
-
-                                    className="cursor-pointer group relative flex flex-col justify-between p-8 rounded-3xl bg-white border border-slate-200 shadow-sm transition-all duration-300 hover:shadow-xl hover:border-red-100"
-                                >
-                                    <CardContent>
-                                        <div
-                                            className={`p-4 w-fit rounded-2xl bg-slate-50 transition-colors ${item.brandColor}`}>
-                                            <item.icon className="w-8 h-8"/>
+                            <a
+                                href={item.href}
+                                key={item.label}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="block h-full"
+                            >
+                                <Card className="h-full group relative flex flex-col justify-between p-5 sm:p-8 rounded-3xl bg-white border border-slate-200 shadow-sm transition-all duration-300 hover:shadow-xl hover:border-red-100">
+                                    <CardContent className="p-0">
+                                        <div className={`p-3 sm:p-4 w-fit rounded-2xl bg-slate-50 transition-colors ${item.brandColor}`}>
+                                            <item.icon className="w-6 h-6 sm:w-8 h-8"/>
                                         </div>
-                                        <div className="mt-12">
-                                            <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">{item.cta}</p>
-                                            <p className="text-lg font-bold text-slate-900 truncate">{item.value}</p>
-                                        </div>
-                                        <ArrowRight
-                                            className="absolute top-8 right-8 w-5 h-5 text-slate-300 group-hover:text-red-500 group-hover:translate-x-1 transition-all"/>
 
+                                        <div className="mt-8 sm:mt-12">
+                                            <p className="text-[10px] sm:text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">
+                                                {item.cta}
+                                            </p>
+                                            <p className="text-base sm:text-lg font-bold text-slate-900 truncate block">
+                                                {item.value}
+                                            </p>
+                                        </div>
+
+                                        <ArrowRight className="absolute top-6 right-6 sm:top-8 sm:right-8 w-4 h-4 sm:w-5 h-5 text-slate-300 group-hover:text-red-500 group-hover:translate-x-1 transition-all"/>
                                     </CardContent>
                                 </Card>
                             </a>
