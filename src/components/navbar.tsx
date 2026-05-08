@@ -15,9 +15,9 @@ export const Navbar = () => {
     return (
         <nav
             id="main-nav"
-            className="w-full fixed top-0 left-0 right-0 z-50 transition-all duration-500 py-5 bg-black border-b border-white/10"
+            className="h-25 w-full fixed top-0 left-0 right-0 z-50 transition-all duration-500 py-5 bg-black border-b border-white/10"
         >
-            <div className="max-w-7xl mx-auto px-6 md:px-10 flex justify-between items-center">
+            <div className="max-w-7xl mt-2 sm:mt-0 mx-auto px-6 md:px-10 flex justify-between items-center">
 
                 <a href="/" className="relative z-50 flex items-center gap-2">
                     <img src="/logo.png" alt="logo"
@@ -41,7 +41,7 @@ export const Navbar = () => {
                     className="relative z-50 lg:hidden p-2 text-white hover:bg-white/10 cursor-pointer"
                     onClick={() => setOpen(!open)}
                 >
-                    {open ? <X className="w-7 h-7"/> : <Menu className="w-7 h-7"/>}
+                    {open ? <X className="w-10 h-10"/> : <Menu className="w-10 h-10"/>}
                 </Button>
             </div>
             <div className={`
