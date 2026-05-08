@@ -14,7 +14,9 @@ export const Footer = () => {
                         </span>
                     </div>
                     <p className="text-zinc-400 text-sm leading-relaxed max-w-xs">
-                        ASD Black Bulls Volley a Cologno Monzese (MI). Passione, grinta e crescita per atleti di ogni età. Scopri le nostre squadre, i calendari gare e unisciti alla nostra realtà pallavolistica.                    </p>
+                        ASD Black Bulls Volley a Cologno Monzese (MI). Passione, grinta e crescita per atleti di ogni
+                        età. Scopri le nostre squadre, i calendari gare e unisciti alla nostra realtà
+                        pallavolistica. </p>
                 </div>
                 <div className="flex flex-col space-y-4 mt-3">
                     <h4 className="text-white font-bold uppercase tracking-wider text-sm">Link rapidi</h4>
@@ -29,14 +31,15 @@ export const Footer = () => {
                     <h4 className="text-white font-bold uppercase tracking-wider text-sm">Legale</h4>
                     <ul className="text-zinc-400 text-sm space-y-2">
                         <li><a href="./">Cookie Policy</a></li>
-                        <li><a href="./organigramma">Privacy Policy</a></li>
-                        <li><a href="./contatti">Termini e condizioni</a></li>
+                        <li><a href="./privacy-policy">Privacy Policy</a></li>
+                        <li><a href="./termini">Termini e condizioni</a></li>
                     </ul>
                 </div>
 
 
                 <div className="flex flex-col space-y-4">
                     <h4 className="text-white font-bold uppercase tracking-wider text-sm">Contatti</h4>
+
                     <a
                         className="text-sm mb-2 hover:underline cursor-pointer flex items-center gap-2  text-background/60"
                         href="tel:+393517506557"
