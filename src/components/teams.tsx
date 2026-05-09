@@ -45,12 +45,6 @@ const teams = [
         days: "2 Allenamenti settimanali",
         match: "Gare nel weekend",
         calendar: "https://volley.pgsmilano.org/calendari"
-    }, {
-        image: "",
-        name: "MISTA S",
-        days: "1 Allenamento settimanale",
-        match: "Gara infrasettimanale",
-        calendar: "https://ivl.usacli.it/CalendarioView?girone_id=null&territorio_id=3&campionato_id=null&inizio_stagione=2025-09-01T00:00:00.000Z&fine_stagione=2026-08-31T00:00:00.000Z&societa_id=156&squadra_id=659"
     },
     {
         image: "",
@@ -58,7 +52,13 @@ const teams = [
         days: "1 Allenamento settimanale",
         match: "Gara infrasettimanale",
         calendar: "https://ivl.usacli.it/CalendarioView?girone_id=null&territorio_id=3&campionato_id=null&inizio_stagione=2025-09-01T00:00:00.000Z&fine_stagione=2026-08-31T00:00:00.000Z&societa_id=156&squadra_id=598"
-    },
+    }, {
+        image: "",
+        name: "MISTA S",
+        days: "1 Allenamento settimanale",
+        match: "Gara infrasettimanale",
+        calendar: "https://ivl.usacli.it/CalendarioView?girone_id=null&territorio_id=3&campionato_id=null&inizio_stagione=2025-09-01T00:00:00.000Z&fine_stagione=2026-08-31T00:00:00.000Z&societa_id=156&squadra_id=659"
+    }
 ]
 
 export const Teams = () => {
