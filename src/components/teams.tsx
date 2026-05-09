@@ -3,48 +3,62 @@ import {ArrowUpRight, Dumbbell, Calendar} from "lucide-react";
 import {Separator} from "@/components/ui/separator";
 
 const teams = [
+
     {
         image: "/1DivM.jpeg",
         name: "1° DIVISIONE MASCHILE",
         days: "2 Allenamenti settimanali",
-        math: "Gare infrasettimanali",
+        match: "Gare infrasettimanali",
         calendar: "https://www.sol.milano.federvolley.it/calendarioris/1001044/2025"
     },
     {
         image: "/2DivM.jpeg",
         name: "2° DIVISIONE MASCHILE",
         days: "2 Allenamenti settimanali",
-        math: "Gare nel weekend",
+        match: "Gare nel weekend",
         calendar: "https://www.sol.milano.federvolley.it/calendarioris/1001048/2025"
     },
     {
         image: "/3DivF.jpeg",
         name: "3° DIVISIONE FEMMINILE",
         days: "2 Allenamenti settimanali",
-        math: "Gare infrasettimanali",
+        match: "Gare infrasettimanali",
         calendar: "https://www.sol.milano.federvolley.it/calendarioris/1001053/2025"
     },
     {
         image: "/U15M.jpeg",
         name: "UNDER 15 MASCHILE",
         days: "2 Allenamenti settimanali",
-        math: "Gare nel weekend",
+        match: "Gare nel weekend",
         calendar: "https://volley.pgsmilano.org/calendari"
     },
     {
         image: "/U15F.jpeg",
         name: "UNDER 15 FEMMINILE",
         days: "2 Allenamenti settimanali",
-        math: "Gare nel weekend",
+        match: "Gare nel weekend",
         calendar: "https://ivl.usacli.it/CalendarioView?girone_id=null&territorio_id=3&campionato_id=null&inizio_stagione=2025-09-01T00:00:00.000Z&fine_stagione=2026-08-31T00:00:00.000Z&societa_id=156&squadra_id=1334"
     },
     {
         image: "/U12.jpeg",
         name: "UNDER 12",
         days: "2 Allenamenti settimanali",
-        math: "Gare nel weekend",
+        match: "Gare nel weekend",
         calendar: "https://volley.pgsmilano.org/calendari"
-    }
+    }, {
+        image: "",
+        name: "MISTA S",
+        days: "1 Allenamento settimanale",
+        match: "Gara infrasettimanale",
+        calendar: "https://ivl.usacli.it/CalendarioView?girone_id=null&territorio_id=3&campionato_id=null&inizio_stagione=2025-09-01T00:00:00.000Z&fine_stagione=2026-08-31T00:00:00.000Z&societa_id=156&squadra_id=659"
+    },
+    {
+        image: "",
+        name: "MISTA B",
+        days: "1 Allenamento settimanale",
+        match: "Gara infrasettimanale",
+        calendar: "https://ivl.usacli.it/CalendarioView?girone_id=null&territorio_id=3&campionato_id=null&inizio_stagione=2025-09-01T00:00:00.000Z&fine_stagione=2026-08-31T00:00:00.000Z&societa_id=156&squadra_id=598"
+    },
 ]
 
 export const Teams = () => {
@@ -106,7 +120,7 @@ export const Teams = () => {
                                     </div>
                                     <div className="flex items-center gap-3 text-sm text-slate-600">
                                         <Calendar size={18} className="text-red-500 shrink-0"/>
-                                        <span className="font-medium">{team.math}</span>
+                                        <span className="font-medium">{team.match}</span>
                                     </div>
                                 </div>
 
