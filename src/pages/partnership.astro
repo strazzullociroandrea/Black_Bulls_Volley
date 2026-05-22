@@ -1,0 +1,18 @@
+---
+import Layout from '../layouts/Layout.astro';
+import {Navbar} from '../components/navbar'
+import {Partnership} from '../components/partnership'
+import {Footer} from "@/components/footer.tsx";
+---
+
+<Layout>
+    <header>
+        <Navbar client:load/>
+    </header>
+    <main class="pt-20 md:pt-10">
+        <Partnership/>
+    </main>
+    <footer>
+        <Footer/>
+    </footer>
+</Layout>
