@@ -1,7 +1,7 @@
 const partnership = [
     {
         name: "AB",
-        linkToImage: './partner/AB.jpeg',
+        linkToImage: '/partner/AB.jpeg',
         linkToUrl: 'https://www.gruppoab.com/it/'
     }
 ]
