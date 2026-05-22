@@ -6,6 +6,7 @@ const navLinks = [
     {title: "Home", href: "/"},
     {title: "Squadre", href: "/squadre"},
     {title: "Organigramma", href: "/organigramma"},
+    {title: "Partnership", href: "/partnership"},
     {title: "Contatti", href: "/contatti"},
 ];
 
