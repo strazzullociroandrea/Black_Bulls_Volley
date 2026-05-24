@@ -17,10 +17,11 @@ const organization = {
         {name: "Daniela Fraschini", role: "Vicepresidente", icon: ShieldCheck},
         {name: "Susan Melarato", role: "Direttore Sportivo", icon: Trophy},
     ],
-    amministrazione: [
+    staff: [
         {name: "Fabio Castaldo", role: "Tesoriere"},
         {name: "Ivan Gotti", role: "Segretario"},
         {name: "Monica Squitieri", role: "Resp. Arbitri e refertisti asd"},
+        {name: "Ciro Andrea Strazzullo", role: ""}
     ],
     allenatori: [
         {team: "1ª Divisione", coach: "Roberto Grotto", second: "Marco Frigerio"},
@@ -77,10 +78,10 @@ export const OrganizationalChart = () => {
                     <div className="lg:w-1/3 mb-5">
                         <div className="flex items-center gap-2 mb-6">
                             <ClipboardCheck className="w-5 h-5 text-red-600"/>
-                            <h3 className="font-black uppercase tracking-widest text-sm text-slate-900">Amministrazione</h3>
+                            <h3 className="font-black uppercase tracking-widest text-sm text-slate-900">Staff</h3>
                         </div>
                         <div className="grid gap-3 mb-5">
-                            {organization.amministrazione.map((o) => (
+                            {organization.staff.map((o) => (
                                 <Card key={o.name} className=" rounded-2xl bg-slate-50 border border-slate-100">
                                     <CardContent>
                                         <p
