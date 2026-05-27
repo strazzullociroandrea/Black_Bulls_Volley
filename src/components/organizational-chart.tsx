@@ -21,7 +21,7 @@ const organization = {
         {name: "Fabio Castaldo", role: "Tesoriere"},
         {name: "Ivan Gotti", role: "Segretario"},
         {name: "Monica Squitieri", role: "Resp. Arbitri e refertisti asd"},
-        {name: "Ciro Andrea Strazzullo", role: ""}
+        {name: "Ciro Andrea Strazzullo", role: "Web e Marketing junior"}
     ],
     allenatori: [
         {team: "1ª Divisione", coach: "Roberto Grotto", second: "Marco Frigerio"},
