@@ -13,15 +13,17 @@ import {
 
 const organization = {
     presidenza: [
-        {name: "Manuel Garrido", role: "Presidente", icon: ShieldCheck},
-        {name: "Daniela Fraschini", role: "Vicepresidente", icon: ShieldCheck},
-        {name: "Susan Melarato", role: "Direttore Sportivo", icon: Trophy},
+        {name: "Manuel Garrido", role: "Presidente"},
+        {name: "Daniela Fraschini", role: "Vicepresidente"},
+        {name: "Susan Melarato", role: "Direttore sportivo & Operations Manager"},
     ],
     staff: [
+        {name: "Daniela Fraschini", role: "Graphic Designer"},
+        {name: "Susan Melarato", role: "Social Media Manager"},
         {name: "Fabio Castaldo", role: "Tesoriere"},
         {name: "Ivan Gotti", role: "Segretario"},
-        {name: "Monica Squitieri", role: "Resp. Arbitri e refertisti asd"},
-        {name: "Ciro Andrea Strazzullo", role: "Web e Marketing junior"}
+        {name: "Monica Squitieri", role: "Resp. Arbitri e refertisti"},
+        {name: "Ciro Andrea Strazzullo", role: "Web & Marketing Specialist"},
     ],
     allenatori: [
         {team: "1ª Divisione", coach: "Roberto Grotto", second: "Marco Frigerio"},
@@ -53,10 +55,10 @@ export const OrganizationalChart = () => {
                         </h2>
                     </div>
                     <div
-                        className="lg:w-2/3 grid grid-cols-1 sm:grid-cols-3 gap-4 justify-center items-start">                        {
+                        className="h-auto lg:w-2/3 grid grid-cols-1 sm:grid-cols-3 gap-4 justify-center items-start">                        {
                         organization.presidenza.map(person => (
                             <Card key={person.name}
-                                  className="group relative p-6 rounded-3xl bg-white border border-slate-200 shadow-sm transition-all duration-300 hover:shadow-xl hover:border-red-100">
+                                  className=" h-full group relative p-6 rounded-3xl bg-white border border-slate-200 shadow-sm transition-all duration-300 hover:shadow-xl hover:border-red-100">
                                 <Avatar className="h-12 w-12 mb-4 border border-slate-100">
                                     <AvatarFallback className="bg-slate-900 text-white text-xs font-bold">
                                         {getInitials(person.name)}
