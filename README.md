@@ -84,5 +84,5 @@ Inside of your Astro project, you'll see the following folders and files:
 <hr style="border: 0.5px solid #4b5563; margin: 30px 0;">
 
 <p style=" text-align: center;"> Sito sviluppato da <a style="color:red" href="https://cirostrazzullo.it">cirostrazzullo</a>.</p>
-<p style=" text-align: center;color: #6b7280;"><i> Tutti i diritti riservati. Vietato l'utilizzo di dati, testi, foto o loghi senza autorizzazione scritta della ASD.</i></p>
+<p style=" text-align: center;color: #6b7280;"><i> Tutti i diritti riservati. Vietato l'utilizzo di dati, testi, foto o loghi senza autorizzazione scritta della ASD. Vietata la duplicazione del sito web per qualsiasi scopo.</i></p>
 
