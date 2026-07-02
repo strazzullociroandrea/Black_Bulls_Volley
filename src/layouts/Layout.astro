@@ -1,5 +1,7 @@
 ---
 import '../styles/global.css'
+import Schema from '../schema/Schema.astro';
+
 interface Props {
     title?: string;
     description?: string;
@@ -11,6 +13,7 @@ const {
 
 import {CookieConsent} from '@/components/cookie-consent.tsx';
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const isHome = Astro.url.pathname === '/';
 ---
 
 <!DOCTYPE html>
@@ -32,6 +35,8 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
           content="pallavolo vicino a me, pallavolo Cologno Monzese, volley Cologno, ASD Black Bulls Volley, sport Cologno Monzese, corsi pallavolo Milano est, pallavolo giovanile, FIPAV Milano, PGS volley, scuola pallavolo ragazzi"/>
     <meta property="og:description"
           content="Vivi la pallavolo con i Black Bulls Volley di Cologno Monzese. Passione, crescita e spirito di squadra dal settore giovanile alla Serie D. Entra nel nostro mondo."/>
+    {isHome &&
+            <Schema/>}
 
 </head>
 <body>
