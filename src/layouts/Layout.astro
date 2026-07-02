@@ -1,6 +1,19 @@
 ---
 import '../styles/global.css'
+import Schema from '../schema/Schema.astro';
+
+interface Props {
+    title?: string;
+    description?: string;
+}
+const {
+    title,
+    description
+} = Astro.props;
+
 import {CookieConsent} from '@/components/cookie-consent.tsx';
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const isHome = Astro.url.pathname === '/';
 ---
 
 <!DOCTYPE html>
@@ -9,24 +22,26 @@ import {CookieConsent} from '@/components/cookie-consent.tsx';
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width"/>
     <link rel="icon" type="image/png" href="/logo.png"/>
-    <link rel="canonical" href="https://blackbullsvolley.it/" />
-    <title>Pallavolo Cologno Monzese | Black Bulls Volley ASD</title>
+    <link rel="canonical" href={canonicalURL}/>
+    <title>{title}</title>
     <meta name="robots" content="index, follow">
     <meta name="author" content="Ciro A. Strazzullo - cirostrazzullo.it"/>
     <meta property="og:title" content="ASD Black Bulls Volley"/>
     <meta property="og:type" content="website"/>
-    <meta name="google-site-verification" content="e84IuWv3tpg3f26ZKpJHUUkMtI27jYzwLWWzhZQol8U" />
+    <meta name="google-site-verification" content="e84IuWv3tpg3f26ZKpJHUUkMtI27jYzwLWWzhZQol8U"/>
     <meta name="description"
-          content="Vivi la pallavolo con i Black Bulls Volley di Cologno Monzese. Passione, crescita e spirito di squadra dal settore giovanile alla Serie D. Entra nel nostro mondo."/>
+          content={description}/>
     <meta name="keywords"
           content="pallavolo vicino a me, pallavolo Cologno Monzese, volley Cologno, ASD Black Bulls Volley, sport Cologno Monzese, corsi pallavolo Milano est, pallavolo giovanile, FIPAV Milano, PGS volley, scuola pallavolo ragazzi"/>
     <meta property="og:description"
           content="Vivi la pallavolo con i Black Bulls Volley di Cologno Monzese. Passione, crescita e spirito di squadra dal settore giovanile alla Serie D. Entra nel nostro mondo."/>
+    {isHome &&
+            <Schema/>}
 
 </head>
 <body>
 <slot/>
-    <CookieConsent client:load/>
+<CookieConsent client:load/>
 </body>
 </html>
 

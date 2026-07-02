@@ -38,6 +38,7 @@ export const Navbar = () => {
                 </div>
 
                 <Button
+                    id="showMobileNavbar"
                     variant="ghost"
                     className="relative z-50 lg:hidden p-2 text-white hover:bg-white/10 cursor-pointer"
                     onClick={() => setOpen(!open)}

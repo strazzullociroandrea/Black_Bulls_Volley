@@ -1,0 +1,35 @@
+---
+const schema = {
+    "@context": "https://schema.org",
+    "@type": "SportsOrganization",
+    "name": "Pallavolo Cologno Monzese | Black Bulls Volley ASD",
+    "url": "https://blackbullsvolley.it/",
+    "logo": "https://blackbullsvolley.it/logo.png",
+    "sport": "Pallavolo",
+    "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+393517506557",
+        "email": "cblackbullsvolley@gmail.com"
+    },
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Via Leonardo da Vinci 1, Cologno Monzese",
+        "addressLocality": "Cologno Monzese",
+        "addressCountry": "IT",
+        "addressRegion": "MI",
+        "postalCode": "20093"
+    },
+    "description": "Vivi la pallavolo con i Black Bulls Volley di Cologno Monzese. Passione, crescita e spirito di squadra dal settore giovanile alla Serie D.",
+    "foundingDate": "2011-11-29",
+    "sameAs": [
+        "https://www.facebook.com/BlackBullsV/",
+        "https://www.instagram.com/blackbullsvolley"
+    ],
+    "areaServed": {
+        "@type": "City",
+        "name": "Cologno Monzese"
+    }
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schema)}/>
