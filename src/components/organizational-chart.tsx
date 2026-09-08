@@ -5,7 +5,6 @@ import {
 import {Separator} from "@/components/ui/separator";
 import {Avatar, AvatarFallback} from "@/components/ui/avatar";
 import {
-    ShieldCheck,
     Trophy,
     Users2,
     ClipboardCheck,
@@ -26,14 +25,11 @@ const organization = {
         {name: "Ciro Andrea Strazzullo", role: "Web & Marketing Specialist"},
     ],
     allenatori: [
-        {team: "1ª Divisione", coach: "Roberto Grotto", second: "Marco Frigerio"},
+        {team: "Serie D", coach: "Roberto Grotto", second: "Marco Frigerio"},
         {team: "2ª Div. Maschile", coach: "Alfredo Duca"},
-        {team: "3ª Divisione", coach: "Maria Chiara Anigello"},
         {team: "U15 Maschile", coach: "Daniela Fraschini", second: "Ciro Andrea Strazzullo"},
-        {team: "U15 Femminile", coach: "Federica Urso"},
-        {team: "U12", coach: "Annalisa Nigro", second: "Ludovico Grotti"},
     ],
-    dirigenti: ["Dell’olio Antonietta", "Giorgio Domenico", "Lionetti Brunella", "Pozzi Elena"],
+    dirigenti: ["Dell’olio Antonietta"],
 };
 
 export const OrganizationalChart = () => {
