@@ -28,6 +28,7 @@ const organization = {
         {team: "Serie D", coach: "Roberto Grotto", second: "Marco Frigerio"},
         {team: "2ª Div. Maschile", coach: "Alfredo Duca"},
         {team: "U15 Maschile", coach: "Daniela Fraschini", second: "Ciro Andrea Strazzullo"},
+        {team: "Minivolley", coach: "Ludovico Grotti"}
     ],
     dirigenti: ["Dell’olio Antonietta"],
 };
