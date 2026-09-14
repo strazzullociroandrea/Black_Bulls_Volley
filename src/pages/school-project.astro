@@ -15,12 +15,16 @@ import {
     Sparkles,
     Target
 } from "lucide-react";
+import {Navbar} from "@/components/navbar.tsx";
 ---
 
 <Layout
         title="Progetto scuole | Black Bulls Volley ASD"
         description="Vivi la pallavolo con i Black Bulls Volley di Cologno Monzese. Passione, crescita e spirito di squadra dal settore giovanile alla Serie D."
 >
+    <header>
+        <Navbar client:load/>
+    </header>
     <main class="overflow-hidden bg-slate-950 text-white w-full">
         <HeroSchool/>
 
