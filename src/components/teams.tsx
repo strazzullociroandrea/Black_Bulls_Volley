@@ -8,15 +8,15 @@ const teams = [
         image: "/1DivM.jpeg",
         name: "Serie D",
         days: "2 Allenamenti settimanali",
-        match: "Gare infrasettimanali",
-        calendar: "https://www.sol.milano.federvolley.it/calendarioris/1001044/2025"
+        match: "Gare nel weekend",
+        calendar: "https://www.lombardia.federvolley.it/rest_api/article?category_id=42"
     },
     {
         image: "/2DivM.jpeg",
         name: "2° DIVISIONE MASCHILE",
         days: "2 Allenamenti settimanali",
-        match: "Gare nel weekend",
-        calendar: "https://www.sol.milano.federvolley.it/calendarioris/1001048/2025"
+        match: "Gare infrasettimanali",
+        calendar: "https://www.sol.milano.federvolley.it/calendarioris/1001233/2026"
     },
     {
         image: "/U15M.jpeg",
@@ -30,13 +30,13 @@ const teams = [
         name: "MISTA B",
         days: "1 Allenamento settimanale",
         match: "Gara infrasettimanale",
-        calendar: "https://ivl.usacli.it/CalendarioView?girone_id=null&territorio_id=3&campionato_id=null&inizio_stagione=2025-09-01T00:00:00.000Z&fine_stagione=2026-08-31T00:00:00.000Z&societa_id=156&squadra_id=598"
+        calendar: "https://ivl.usacli.it/CalendarioView?girone_id=null&territorio_id=3&campionato_id=null&inizio_stagione=2026-11-12T00:00:00.000Z&fine_stagione=2100-12-31T00:00:00.000Z&societa_id=156&squadra_id=598"
     }, {
         image: "/mista_s.jpeg",
         name: "MISTA S",
         days: "1 Allenamento settimanale",
         match: "Gara infrasettimanale",
-        calendar: "https://ivl.usacli.it/CalendarioView?girone_id=null&territorio_id=3&campionato_id=null&inizio_stagione=2025-09-01T00:00:00.000Z&fine_stagione=2026-08-31T00:00:00.000Z&societa_id=156&squadra_id=659"
+        calendar: "https://ivl.usacli.it/CalendarioView?girone_id=null&territorio_id=3&campionato_id=null&inizio_stagione=2026-11-12T00:00:00.000Z&fine_stagione=2100-12-31T00:00:00.000Z&societa_id=156&squadra_id=659"
     }
 ]
 
